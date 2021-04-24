@@ -72,7 +72,7 @@ def Sampling(Itr_time , Total_points , cord_X , cord_Y ):
         num2 = r.randint(0,2000)
         cord_Y.append(num2)
         
-    pick = r.sample(range(150), Itr_time*2) # 要跑6次 一次需要2個點 每個數字都可以給x&y // ex pick[1] = 20 => X[20] Y[20] 是第一個點
+    pick = r.sample(range(Total_points), Itr_time*2) # 要跑6次 一次需要2個點 每個數字都可以給x&y // ex pick[1] = 20 => X[20] Y[20] 是第一個點
     
     return pick , cord_X , cord_Y
     
